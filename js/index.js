@@ -9,7 +9,9 @@ window.onload = function() {
 	
 	slider(slider_btn,slider_item,slider_prev,slider_next);
 	news_head(news_head_item,item_active,news_content);
-	$('img').lazyload();
+	$('img').lazyload({
+		threshold: 200;
+	});
 }
 function slider(slider_btn,slider_item,slider_prev,slider_next){
 	for(let i=0;i<slider_btn.length;i++){
