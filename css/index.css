@@ -232,19 +232,93 @@ img{
 .fs .fs-inner .col1 .cate .menu .item{
 	padding-left:10px;
 	line-height:30px;
+	width:180px;
+	height:30px;
 }
-.fs .fs-inner .col1 .cate .menu a{
+.fs .fs-inner .col1 .cate .menu .item:hover{
+	background:#999395;
+}
+.fs .fs-inner .col1 .cate .menu .item a{
 	font-size:14px;
 	color:#fff;
-	padding:0 4px;
+	padding:0 2px;
+	white-space:nowrap;
 }
-.fs .fs-inner .col1 .cate .menu a:hover{
-	color: crimson;
+.fs .fs-inner .col1 .cate .menu .item a:hover{
+	color:crimson;
+}
+.fs .fs-inner .col1 .cate .cate-pop{
+	position:absolute;
+	left:190px;
+	top:0;
+	width:800px;
+	height:500px;
+	box-shadow:10px -5px 16px rgba(0,0,0,.2);
+	z-index:5;
+	background-color:#fff;
+	display:none;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop{
+	padding:20px 0 10px 20px;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .cate-part{
+	
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .cate-part a{
+	background-color:#6E6568;
+	padding:6px 16px;
+	margin-right:4px;
+	white-space:nowrap;
+	color:#fff;
+	font:600 13px "宋体";
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .cate-part a:hover{
+	background:#444;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail{
+	padding-top:20px;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item{
+	position:relative;
+	padding-left:80px;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item .title{
+	position:absolute;
+	top:8px;
+	left:0px;
+	width:70px;
+	text-align:right;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item .title a{
+	color:#333;
+	font-size:12px;
+	font-weight:600;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item .title a:hover{
+	color:crimson;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item .content{
+	padding:6px 0;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item .content a{
+	height:16px;
+	line-height:16px;
+	padding:0px 10px;
+	margin:4px 0;
+	font-size:12px;
+	color:#6E6568;
+	margin-right:5px;
+	white-space:nowrap;
+	border-left:1px solid #ccc;
+}
+.fs .fs-inner .col1 .cate .cate-pop .pop .detail .item .content a:hover{
+	color:crimson;
 }
 .fs .fs-inner .col2{
 	float:left;
 	height:100%;
 	width:790px;
+	z-index:1;
 }
 .fs .fs-inner .col2 .slider{
 	position:relative;
