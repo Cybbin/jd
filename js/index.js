@@ -11,7 +11,7 @@ var news_head_item;
 var item_active;
 var news_content;
 
-window.onload = function() {
+$(document).ready(function() {
 	col1 = $('.fs .fs-inner .col1')[0];
 	cate_pop = $('.fs .fs-inner .col1 .cate .cate-pop')[0];
 	menu = $('.fs .fs-inner .col1 .cate .menu .item');
@@ -28,7 +28,7 @@ window.onload = function() {
 	news_head();
 	menu_pop();
 	slider_run();
-}
+});
 
 function menu_pop() {
 	if(menu.length != pop.length) {
