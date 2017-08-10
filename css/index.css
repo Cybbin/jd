@@ -17,11 +17,12 @@ img{
 	border:0;
 }
 .shortcut {
-	background: #e3e4e5;
 	height: 30px;
 	line-height: 30px;
 	color: #666;
 	font-size: 12px;
+	background: #e3e4e5;
+	min-width:1190px;
 }
 .shortcut .w {
 	height:30px;
@@ -78,8 +79,12 @@ img{
 .color-gray{
 	color: rgb(153, 153, 153) !important;
 }
-.topbanner{
+.topbanner .w{
 	background:#8A25C6;
+	min-width:1190px;
+}
+.topbanner .w img{
+	max-width:1190px;
 }
 .header{
 	
@@ -687,6 +692,7 @@ img{
 
 .footer{
 	height:500px;
+	min-width:1190px;
 	background-color:#eee;
 	margin-top:30px;
 }
